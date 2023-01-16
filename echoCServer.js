@@ -12,7 +12,7 @@ net
     // データを受け取ったら何をするか設定する
     socket.on('data', (data) => {
       // 受け取ったデータを表示する
-      console.log(`received: data`)
+      console.log(`received: ${data}`)
       // 受け取ったデータの内容をそのまま送り出す
       socket.write(data)
     })
