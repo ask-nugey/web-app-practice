@@ -17,7 +17,7 @@ socket.connect(SERVE_PORT, SERVE_IP, () => {
 process.stdin.on('data', (data) => {
   // データを読み込んだら、通信の出入り口に書き込む
   // つまり、接続先に向けてメッセージを送る
-  socket,write(data)
+  socket.write(data)
 })
 
 // 通信の出入り口からデータを受け取ったら何をするかを設定する
